@@ -1,26 +1,271 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VYV-CD-2ry">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Second Window-->
+        <scene sceneID="b6h-8e-DbG">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VYV-CD-2ry" userLabel="Second Window" customClass="Second" customModule="Orrery" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Hjq-Eb-3xo"/>
+                        <viewControllerLayoutGuide type="bottom" id="UyJ-Vk-Y6A"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="Ghk-BC-laq">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sQX-B5-bYd" userLabel="Images">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="22c-4u-srV" userLabel="Sun">
+                                        <rect key="frame" x="0.0" y="134" width="500" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="UOC-AP-XGT" userLabel="Earth">
+                                        <rect key="frame" x="0.0" y="134" width="500" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shuttle" translatesAutoresizingMaskIntoConstraints="NO" id="BXi-ym-udI" userLabel="Shuttle1">
+                                        <rect key="frame" x="0.0" y="134" width="500" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shuttle" translatesAutoresizingMaskIntoConstraints="NO" id="qRG-c5-f6T" userLabel="Shuttle2">
+                                        <rect key="frame" x="0.0" y="134" width="500" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orbit" translatesAutoresizingMaskIntoConstraints="NO" id="O4d-2d-1tS" userLabel="Orbit">
+                                        <rect key="frame" x="0.0" y="134" width="500" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mars" translatesAutoresizingMaskIntoConstraints="NO" id="BgO-iX-MZK" userLabel="Mars">
+                                        <rect key="frame" x="0.0" y="134" width="500" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXm-2X-g4h" userLabel="info">
+                                <rect key="frame" x="500" y="64" width="524" height="708"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLP-Jr-wSt" userLabel="EarthAngle">
+                                        <rect key="frame" x="25" y="0.0" width="500" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlg-El-CW4" userLabel="Shuttle1Angle">
+                                        <rect key="frame" x="25" y="25" width="500" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTQ-79-Ygm" userLabel="Shuttle2Angle">
+                                        <rect key="frame" x="25" y="50" width="500" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDo-Vi-QMw" userLabel="OrbitAngle">
+                                        <rect key="frame" x="25" y="75" width="500" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZC-tF-Q3j" userLabel="MarsAngle">
+                                        <rect key="frame" x="25" y="100" width="500" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63c-hZ-vXn" userLabel="EarthMarsAngle">
+                                        <rect key="frame" x="25" y="125" width="500" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7q6-tQ-cRf" userLabel="Restart">
+                                        <rect key="frame" x="0.0" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Restart"/>
+                                        <connections>
+                                            <action selector="Restart:" destination="VYV-CD-2ry" eventType="touchUpInside" id="td5-w3-J6Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qge-x0-J5T" userLabel="Pause">
+                                        <rect key="frame" x="175" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <action selector="Pause:" destination="VYV-CD-2ry" eventType="touchUpInside" id="Rol-u8-VB2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUn-z0-I5H">
+                                        <rect key="frame" x="350" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Step"/>
+                                        <connections>
+                                            <action selector="Step:" destination="VYV-CD-2ry" eventType="touchUpInside" id="NWn-ma-2f1"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WS-2l-X1L" userLabel="ScrollView">
+                                        <rect key="frame" x="0.0" y="200" width="524" height="528"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog1" translatesAutoresizingMaskIntoConstraints="NO" id="NCa-Zt-cah" userLabel="EM1">
+                                                <rect key="frame" x="82" y="16" width="156.5" height="156.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog2" translatesAutoresizingMaskIntoConstraints="NO" id="iJe-Sf-yww" userLabel="EM2">
+                                                <rect key="frame" x="232" y="0.0" width="188.5" height="188.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog3" translatesAutoresizingMaskIntoConstraints="NO" id="rRm-uG-u5S" userLabel="EM3">
+                                                <rect key="frame" x="302" y="240" width="143.5" height="143.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog4" translatesAutoresizingMaskIntoConstraints="NO" id="PB0-fM-pCk" userLabel="EM4">
+                                                <rect key="frame" x="81" y="200" width="224.5" height="224.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog5" translatesAutoresizingMaskIntoConstraints="NO" id="Omk-3u-B2v" userLabel="EM5">
+                                                <rect key="frame" x="100" y="450" width="200" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog6" translatesAutoresizingMaskIntoConstraints="NO" id="OwK-Qd-lvj" userLabel="EM6">
+                                                <rect key="frame" x="292" y="450" width="200" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog7" translatesAutoresizingMaskIntoConstraints="NO" id="JgY-QZ-6Kn" userLabel="EM7">
+                                                <rect key="frame" x="292" y="670" width="200" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsCog8" translatesAutoresizingMaskIntoConstraints="NO" id="PVl-eu-M1u" userLabel="EM8">
+                                                <rect key="frame" x="100" y="670" width="200" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog1" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-v8-Tgy" userLabel="EMT1">
+                                                <rect key="frame" x="100" y="922" width="168" height="168"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog2" translatesAutoresizingMaskIntoConstraints="NO" id="wkA-WX-obj" userLabel="EMT2">
+                                                <rect key="frame" x="260" y="890" width="232" height="232"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog3" translatesAutoresizingMaskIntoConstraints="NO" id="ixA-zX-gDr" userLabel="EMT3">
+                                                <rect key="frame" x="284" y="1210" width="156" height="156"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog4" translatesAutoresizingMaskIntoConstraints="NO" id="zRp-LW-4xe" userLabel="EMT4">
+                                                <rect key="frame" x="10" y="1100" width="375" height="375"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog4Insert" translatesAutoresizingMaskIntoConstraints="NO" id="JTK-jH-bV2" userLabel="EMT4I">
+                                                <rect key="frame" x="169" y="1257.5" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog5" translatesAutoresizingMaskIntoConstraints="NO" id="s46-xe-tqg" userLabel="EMT5">
+                                                <rect key="frame" x="98" y="1450" width="217" height="217"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog6" translatesAutoresizingMaskIntoConstraints="NO" id="gh7-dv-9Oe" userLabel="EMT6">
+                                                <rect key="frame" x="311" y="1467" width="183" height="183"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog7" translatesAutoresizingMaskIntoConstraints="NO" id="1g6-V0-8BT" userLabel="EMT7">
+                                                <rect key="frame" x="298" y="1735" width="195" height="195"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EarthMarsTransitCog8" translatesAutoresizingMaskIntoConstraints="NO" id="ADF-C3-yyj" userLabel="EMT8">
+                                                <rect key="frame" x="100" y="1730" width="205" height="205"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="EM1" destination="NCa-Zt-cah" id="bsW-zq-fSg"/>
+                        <outlet property="EM2" destination="iJe-Sf-yww" id="efB-FC-AWF"/>
+                        <outlet property="EM3" destination="rRm-uG-u5S" id="Fik-QM-Lsg"/>
+                        <outlet property="EM4" destination="PB0-fM-pCk" id="MwS-IW-JdE"/>
+                        <outlet property="EM5" destination="Omk-3u-B2v" id="6WY-JP-WRe"/>
+                        <outlet property="EM6" destination="OwK-Qd-lvj" id="DXv-V6-JH7"/>
+                        <outlet property="EM7" destination="JgY-QZ-6Kn" id="be8-40-SNb"/>
+                        <outlet property="EM8" destination="PVl-eu-M1u" id="8eZ-AD-2Og"/>
+                        <outlet property="EMT1" destination="FUa-v8-Tgy" id="dsS-4t-hNZ"/>
+                        <outlet property="EMT2" destination="wkA-WX-obj" id="IYc-qE-Eqs"/>
+                        <outlet property="EMT3" destination="ixA-zX-gDr" id="2V1-W4-iSt"/>
+                        <outlet property="EMT4" destination="zRp-LW-4xe" id="oNB-Bg-ARA"/>
+                        <outlet property="EMT4I" destination="JTK-jH-bV2" id="DhJ-oI-9RW"/>
+                        <outlet property="EMT5" destination="s46-xe-tqg" id="12S-cN-5to"/>
+                        <outlet property="EMT6" destination="gh7-dv-9Oe" id="G2k-li-FMk"/>
+                        <outlet property="EMT7" destination="1g6-V0-8BT" id="oof-o5-j4c"/>
+                        <outlet property="EMT8" destination="ADF-C3-yyj" id="9yB-Kt-i9t"/>
+                        <outlet property="Earth" destination="UOC-AP-XGT" id="ick-wF-SYN"/>
+                        <outlet property="EarthAngle" destination="wLP-Jr-wSt" id="b9g-J9-rBs"/>
+                        <outlet property="EarthMarsAngle" destination="63c-hZ-vXn" id="PX7-qR-wHL"/>
+                        <outlet property="Mars" destination="BgO-iX-MZK" id="1S4-0r-UEd"/>
+                        <outlet property="MarsAngle" destination="QZC-tF-Q3j" id="ADU-Tb-V7Z"/>
+                        <outlet property="Orbit" destination="O4d-2d-1tS" id="jCx-95-HhI"/>
+                        <outlet property="OrbitAngle" destination="WDo-Vi-QMw" id="GUV-gg-uy6"/>
+                        <outlet property="PauseButton" destination="Qge-x0-J5T" id="JRk-jP-DAs"/>
+                        <outlet property="ScrollView" destination="5WS-2l-X1L" id="JTi-8W-DJp"/>
+                        <outlet property="Shuttle1" destination="BXi-ym-udI" id="b5O-HL-ZF8"/>
+                        <outlet property="Shuttle1Angle" destination="dlg-El-CW4" id="JP0-Aq-ewd"/>
+                        <outlet property="Shuttle2" destination="qRG-c5-f6T" id="Wj2-lJ-mLz"/>
+                        <outlet property="Shuttle2Angle" destination="MTQ-79-Ygm" id="nGj-Bc-7Bn"/>
+                        <outlet property="Sun" destination="22c-4u-srV" id="m9Q-RF-kSK"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Cx-C9-QdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="776" y="38"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Earth" width="350" height="350"/>
+        <image name="EarthMarsCog1" width="441" height="441"/>
+        <image name="EarthMarsCog2" width="441" height="441"/>
+        <image name="EarthMarsCog3" width="441" height="441"/>
+        <image name="EarthMarsCog4" width="441" height="441"/>
+        <image name="EarthMarsCog5" width="441" height="441"/>
+        <image name="EarthMarsCog6" width="441" height="441"/>
+        <image name="EarthMarsCog7" width="441" height="441"/>
+        <image name="EarthMarsCog8" width="441" height="441"/>
+        <image name="EarthMarsTransitCog1" width="441" height="441"/>
+        <image name="EarthMarsTransitCog2" width="440" height="441"/>
+        <image name="EarthMarsTransitCog3" width="441" height="441"/>
+        <image name="EarthMarsTransitCog4" width="905" height="905"/>
+        <image name="EarthMarsTransitCog4Insert" width="180" height="180"/>
+        <image name="EarthMarsTransitCog5" width="441" height="441"/>
+        <image name="EarthMarsTransitCog6" width="441" height="441"/>
+        <image name="EarthMarsTransitCog7" width="440" height="441"/>
+        <image name="EarthMarsTransitCog8" width="441" height="441"/>
+        <image name="Mars" width="350" height="350"/>
+        <image name="Orbit" width="350" height="350"/>
+        <image name="Shuttle" width="350" height="350"/>
+        <image name="Sun" width="350" height="350"/>
+    </resources>
 </document>
